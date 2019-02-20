@@ -1,52 +1,13 @@
 <?php
- /**
-  * phpagi-asmanager.php : PHP Asterisk Manager functions
-  * Website: http://phpagi.sourceforge.net
-  *
-  * $Id: phpagi-asmanager.php,v 1.10 2005/05/25 18:43:48 pinhole Exp $
-  *
-  * Copyright (c) 2004 - 2010 Matthew Asham <matthew@ochrelabs.com>, David Eder <david@eder.us> and others
-  * All Rights Reserved.
-  *
-  * This software is released under the terms of the GNU Lesser General Public License v2.1
-  *  A copy of which is available from http://www.gnu.org/copyleft/lesser.html
-  * 
-  * We would be happy to list your phpagi based application on the phpagi
-  * website.  Drop me an Email if you'd like us to list your program.
-  *
-  * @package phpAGI
-  * @version 2.0
-  */
-
-
- /**
-  * Written for PHP 4.3.4, should work with older PHP 4.x versions.  
-  * Please submit bug reports, patches, etc to http://sourceforge.net/projects/phpagi/
-  * Gracias. :)
-  *
-  */
 
   if(!class_exists('AGI'))
   {
     require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'phpagi.php');
   }
 
- /**
-  * Asterisk Manager class
-  *
-  * @link http://www.voip-info.org/wiki-Asterisk+config+manager.conf
-  * @link http://www.voip-info.org/wiki-Asterisk+manager+API
-  * @example examples/sip_show_peer.php Get information about a sip peer
-  * @package phpAGI
-  */
   class AGI_AsteriskManager
   {
-   /**
-    * Config variables
-    *
-    * @var array
-    * @access public
-    */
+ 
     public $config;
 
    /**
